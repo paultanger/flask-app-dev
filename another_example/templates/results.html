@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+The product of the number of bedrooms and the year is: {{product}}
+
+the city is {{city}}
+the type is {{airbnb_type}}
+
+<img src="{{ image }}"/>
+
+<form action="{{url_for('recommend')}}">
+  <input type="submit" value="Recommend again" />
+  </form>
+{% endblock content %}
